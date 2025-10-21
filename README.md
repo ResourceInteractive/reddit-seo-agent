@@ -1,4 +1,4 @@
-# reddit-seo-agent
+# Reddit SEO Agent
 Uses your blog posts as grounding for an AI Agent to reply to reddit posts
 
 API Setup and Project Configuration Guide
