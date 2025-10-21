@@ -55,7 +55,7 @@ The .env File
 In your project folder (the same place main.py is), you must have a file named .env. This file holds all your secret keys.
 
 Create the .env file and paste the following text into it:
-'''
+```
 #### Reddit API Credentials
 REDDIT_CLIENT_ID=YOUR_CLIENT_ID_HERE
 REDDIT_CLIENT_SECRET=YOUR_CLIENT_SECRET_HERE
@@ -75,7 +75,7 @@ REDDIT_USER_AGENT: Change your_username to your actual Reddit username.
 GEMINI_API_KEY: Paste the Gemini API key you got from Google AI Studio here.
 TARGET_KEYWORD: Change this to the topic you want to search for.
 YOUR_BLOG_BASE_URL: Change this to your blog's URL.
-'''
+```
 
 What about the REDDIT_REFRESH_TOKEN?
 
