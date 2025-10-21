@@ -7,7 +7,26 @@ Reddit API Keys: To allow the script to log in and post on your behalf.
 
 Google Gemini API Key: To allow the script to generate comments.
 
-## 1. Reddit API Setup
+## 1. Initial Setup
+
+Before you can run any of the Python scripts, you must install the necessary libraries. This project uses a requirements.txt file to manage these dependencies.
+
+Create the requirements.txt File: In your main project folder (the same one where main.py will be), create a new file named requirements.txt.
+
+Add Content: Copy and paste the following lines into your requirements.txt file:
+
+```
+praw
+google-generativeai
+python-dotenv
+```
+Install the Libraries: Open your terminal or command prompt, navigate to your project folder, and run the following command:
+
+```pip install -r requirements.txt```
+
+This will install PRAW (for Reddit), the Google Gemini library, and the dotenv library (for managing your API keys).
+
+## 2. Reddit API Setup
 You need to create a Reddit "app" to get your credentials.
 
 Go to the Reddit Apps Page: Log in to the Reddit account you want to post from, then go to: https://www.reddit.com/prefs/apps/
@@ -36,7 +55,7 @@ The Client Secret is the long string labeled secret.
 
 Copy both of these and save them in a temporary text file.
 
-## 2. Google Gemini API Setup
+## 3. Google Gemini API Setup
 Go to Google AI Studio: Go to https://aistudio.google.com/ and sign in with your Google account.
 
 Get API Key: On the left-hand menu, click "Get API key".
@@ -47,7 +66,7 @@ Copy Your Key: A new key will be generated for you. Click the copy icon to copy 
 
 Copy this key and save it with your Reddit keys.
 
-## 3. Final Project Configuration
+## 4. Final Project Configuration
 Now you will take all the keys you just copied and put them into the project.
 
 The .env File
@@ -96,7 +115,7 @@ Copy that token and paste it as the value for REDDIT_REFRESH_TOKEN in your .env 
 
 After you do all these steps, your .env file will be complete, and the main.py script will be ready to run.
 
-## 4.  Add Your Blog Content
+## 5.  Add Your Blog Content
 
 This agent works by reading your existing blog posts to generate its helpful comments. You must add your posts as simple text files.
 
@@ -111,3 +130,9 @@ Example File Name: my-guide-to-cameras.txt
 Resulting URL: https://yourwebsite.com/blog/my-guide-to-cameras
 
 Add Content: Copy and paste the full text of your blog post into the .txt file. The script will read this raw text as context for the AI.
+
+## 6. Run main.py
+
+```
+python main.py
+```
