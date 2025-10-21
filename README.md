@@ -48,7 +48,7 @@ Copy Your Key: A new key will be generated for you. Click the copy icon to copy 
 
 Copy this key and save it with your Reddit keys.
 
-3. Final Project Configuration
+## 3. Final Project Configuration
 Now you will take all the keys you just copied and put them into the project.
 
 The .env File
@@ -94,3 +94,19 @@ It will print a Refresh Token in your terminal.
 Copy that token and paste it as the value for REDDIT_REFRESH_TOKEN in your .env file.
 
 After you do all these steps, your .env file will be complete, and the main.py script will be ready to run.
+
+## 4.  Add Your Blog Content
+
+This agent works by reading your existing blog posts to generate its helpful comments. You must add your posts as simple text files.
+
+Create the Folder: In your main project folder (the same one as main.py and .env), create a new folder named blog_posts.
+
+Create Your Post Files: Inside the blog_posts/ folder, create a separate .txt file for each blog post you want to use.
+
+Name Your Files: This is important. The name of the file will be used to create the link back to your site. The name should be the "slug" (the part of the URL after your domain).
+
+Example File Name: my-guide-to-cameras.txt
+
+Resulting URL: https://yourwebsite.com/blog/my-guide-to-cameras
+
+Add Content: Copy and paste the full text of your blog post into the .txt file. The script will read this raw text as context for the AI.
