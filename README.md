@@ -67,14 +67,16 @@ GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
 #### Agent Configuration
 TARGET_KEYWORD="beginner photography"
 YOUR_BLOG_BASE_URL="https://yourwebsite.com/blog/"
+
+```
 Fill in the .env File
-REDDIT_CLIENT_ID: Paste the Client ID you got from Reddit here.
-REDDIT_CLIENT_SECRET: Paste the Client Secret you got from Reddit here.
+REDDIT_CLIENT_ID: Paste the Client ID you got from Reddit.
+REDDIT_CLIENT_SECRET: Paste the Client Secret you got from Reddit.
 REDDIT_USER_AGENT: Change your_username to your actual Reddit username.
-GEMINI_API_KEY: Paste the Gemini API key you got from Google AI Studio here.
+GEMINI_API_KEY: Paste the Gemini API key you got from Google AI Studio.
 TARGET_KEYWORD: Change this to the topic you want to search for.
 YOUR_BLOG_BASE_URL: Change this to your blog's URL.
-```
+
 
 What about the REDDIT_REFRESH_TOKEN?
 
