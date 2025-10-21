@@ -8,7 +8,7 @@ Reddit API Keys: To allow the script to log in and post on your behalf.
 
 Google Gemini API Key: To allow the script to generate comments.
 
-1. Reddit API Setup
+## 1. Reddit API Setup
 You need to create a Reddit "app" to get your credentials.
 
 Go to the Reddit Apps Page: Log in to the Reddit account you want to post from, then go to: https://www.reddit.com/prefs/apps/
@@ -37,7 +37,7 @@ The Client Secret is the long string labeled secret.
 
 Copy both of these and save them in a temporary text file.
 
-2. Google Gemini API Setup
+## 2. Google Gemini API Setup
 Go to Google AI Studio: Go to https://aistudio.google.com/ and sign in with your Google account.
 
 Get API Key: On the left-hand menu, click "Get API key".
@@ -55,7 +55,7 @@ The .env File
 In your project folder (the same place main.py is), you must have a file named .env. This file holds all your secret keys.
 
 Create the .env file and paste the following text into it:
-('''
+'''
 #### Reddit API Credentials
 REDDIT_CLIENT_ID=YOUR_CLIENT_ID_HERE
 REDDIT_CLIENT_SECRET=YOUR_CLIENT_SECRET_HERE
@@ -70,17 +70,12 @@ TARGET_KEYWORD="beginner photography"
 YOUR_BLOG_BASE_URL="https://yourwebsite.com/blog/"
 Fill in the .env File
 REDDIT_CLIENT_ID: Paste the Client ID you got from Reddit here.
-
 REDDIT_CLIENT_SECRET: Paste the Client Secret you got from Reddit here.
-
 REDDIT_USER_AGENT: Change your_username to your actual Reddit username.
-
 GEMINI_API_KEY: Paste the Gemini API key you got from Google AI Studio here.
-
 TARGET_KEYWORD: Change this to the topic you want to search for.
-
 YOUR_BLOG_BASE_URL: Change this to your blog's URL.
-''')
+'''
 
 What about the REDDIT_REFRESH_TOKEN?
 
