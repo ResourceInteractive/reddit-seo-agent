@@ -1,7 +1,6 @@
 # Reddit SEO Agent
 Uses your blog posts as grounding for an AI Agent to reply to reddit posts
 
-API Setup and Project Configuration Guide
 You will need two sets of API keys to run this agent:
 
 Reddit API Keys: To allow the script to log in and post on your behalf.
